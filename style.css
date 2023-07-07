@@ -62,7 +62,7 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 100%;
   color: #fff;
 }
 
@@ -106,7 +106,7 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
+  width: 100%;
 }
 
 form button {
@@ -147,7 +147,7 @@ header {
 
 div.form {
   display: flex;
-  flex-direction: column;;
+  flex-direction: column;
 }
 
 .group {
@@ -165,6 +165,29 @@ div.form {
 
 .item-double {
   flex: 2;
+}
+
+.logo {
+  font-size: 72px;
+}
+
+div.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header nav ul li {
+  list-style-type: none;
 }
 
 } 
