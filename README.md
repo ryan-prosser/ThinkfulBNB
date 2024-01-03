@@ -9,9 +9,29 @@ Thinkfulbnb is a vacation rental website that allows people to rent out their ho
 - HTML
 - CSS
 
-## Thinkfulbnb views
+## Created Features
 
-The UX designer provided you with the following user interface mockups:
+### Nav Bar
+
+The navigation bar in the top right of the screen was created to move responsively to always show all 4 options just in different formats. Each word is also linked to it's corresponding section within the page.
+
+### HTML Form
+
+The form with Location, Arrive, etc... is responsive to the size of the screen and gradually goes from all horizontal to vertically stacked as the screen shrinks all while staying inside the pink outline.
+
+### About Section
+
+The about section consistently adjusts so that the two pictures stay the same size as each other and only take up half the section while the words take up the other half until they stack on top of each other.
+
+### Ideas Section
+
+The ideas section shrinks as a 4x4 grid all staying the same size as the others until stacking vertically in the mobile view.
+
+###  Become a Host Section
+
+The become a host section also shrinks in a way that lets the words take up just the left side of the screen and the picture take up an equal width on the right side until stacking in the mobile view.
+
+## Project Views
 
 ### Mobile view
 
@@ -20,100 +40,3 @@ The UX designer provided you with the following user interface mockups:
 ### Desktop view
 
 ![](images/Thinkfulbnb-desktop.png)
-
-### Existing files
-
-| File         | Description                                                             |
-| ------------ | ----------------------------------------------------------------------- |
-| `images/`    | A folder containing all the images used for the design.                 |
-| `index.html` | The starter HTML file. You will need to add your solution to this file. |
-| `style.css`  | The starter css file. You will need to add your solution to this file.  |
-
-You're encouraged to spend some time studying the provided files.
-
-### Setup
-
-Use VSCode Live Server to launch the `index.html` page in your browser.
-
-### Tasks
-
-For this assignment, you will be following a mobile-first development approach. To pass this assignment, you must complete the tasks detailed below.
-
-You **should** use flexbox, and **not** floats, to achieve the desired layouts. The `.group`, `.item`, and `.item-double` classes are provided in the CSS file for your convenience, but it is not necessary to use them.
-
-You are **NOT** expected to match the designs pixel by pixel, as long as the required layout is satisfied.
-
-Edit the `index.html` and `style.css` as needed to achieve the following requirements:
-
-#### Navigation
-
-- The logo should stack on top of the menu links, which are aligned horizontally, as follows:
-
-![Navigation mobile](./images/navigation-mobile.png)
-
-- **Single-page navigation**: Modify the navigation links so that clicking on each link will take the user to the corresponding sections on the page, as follows:
-
-| Link clicked | Take the user to the section with `id` of |
-| ------------ | ----------------------------------------- |
-| `Stay`       | `id="stay"`                               |
-| `About`      | `id="about"`                              |
-| `Ideas`      | `id="ideas"`                              |
-| `Host`       | `id="host"`                               |
-
-#### HTML form
-
-- In the "Find your perfect vacation rental" section, create a form that contains the following input fields with the specified types:
-
-  - `Location`: `text` input type, with a placeholder value of "Search destination"
-  - `Arrive`: `date` input type
-  - `Depart`: `date` input type
-  - `Type`: a dropdown list with the following options:
-    - Apartment
-    - Barn
-    - Castle
-    - Houseboat
-    - Tiny House
-    - Yacht
-    - Yurt
-  - a `"Search"` button
-
-- Some CSS styles have already been written for you to help style your form. Add CSS to the form so that
-  - the labels (i.e., "Location", "Arrive", "Depart", "Type") and their corresponding form fields are aligned towards the opposite ends of each row
-
-Your final form design should look as follows:
-
-![Search form mobile](./images/search-form-mobile.png)
-
-#### Vertical content alignment
-
-- The content in the remainder of the sections (i.e., "About", "Ideas", "Want to become a Thinkfulbnb Host?"), including any text and images, should stack on top of each other. Refer to the mobile design shared above.
-
-#### Responsive images
-
-- Write CSS for all images so that the images will match whatever container width they are placed within, and changing the container sizes will update the image sizes appropriately.
-
-#### Media query: Desktop view
-
-Now that your mobile design is looking good, you will need to adapt the design for the desktop view.
-
-- In `style.css`, create a media query for screens that are wider than `480px`.
-
-Within the media query, write CSS to create the following designs for desktop:
-
-- The logo and the navigation menu links should be spaced apart from each other, like this:
-
-![Navigation desktop](./images/navigation-desktop.png)
-
-- The search form input fields and the button should be horizontally aligned, like this:
-
-![Search form desktop](./images/search-form-desktop.png)
-
-- The items in the "About" section should be horizontally aligned. The paragraph content should be vertically centered and always be about twice as wide as each image item, like this:
-
-![About desktop](./images/about-desktop.png)
-
-- The "Ideas" images should be displayed in a 2 by 2 grid (see the desktop design shared above).
-
-- The items in the "Want to Become a Thinkful Host?" section should be horizontally aligned. The paragraph content should be vertically centered and be as wide as each image item, like this:
-
-![Host desktop](./images/host-desktop.png)
